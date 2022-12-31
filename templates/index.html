@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Chekio</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div class="top">    
+            <h1>Chekio</h1>
+            <h2 id="sub">Check if they're lying to you</h2>
+            <form method="post" action="{{ url_for('submit') }}">
+                <textarea name="text" id="box" maxlength="10000" placeholder="your article here..."></textarea>
+                <div id="the-count">
+                    <span id="current">0</span>
+                    <span id="maximum">/ 10000</span>
+                </div>
+                <br>
+                <input type="submit" id="but" value="Check"></input>
+            </form>
+            
+
+
+
+        </div>
+
+        <div id="footer">
+            <p>made by : <a href="https://www.linkedin.com/in/mehdi-lahlou-mimi-893b91245/" target="_blank">Mehdi Lahlou</a></p>
+            
+        </div>
+
+    </div>
+    </body>
+    <script src="{{ url_for('static', filename='js/counter.js') }}"></script>
+</html>
