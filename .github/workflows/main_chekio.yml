@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Chekio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3AE3C8E79F73423CACA169ABF73F20E8 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_89726B65462642AA948EA6528F44D1A2 }}
